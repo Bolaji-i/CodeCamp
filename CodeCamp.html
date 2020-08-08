@@ -10,7 +10,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <script type="text/javascript" src="CodeCamp.js"></script>
+    <script type="text/javascript" src="codecamp.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
 
@@ -23,7 +23,7 @@
   <body>
   <div class="container">
     <form id="survey-form">
-    <div class="form-group">
+    <div class="form-group name">
       <label id="name">Name</label>
       <input type="email" class="form-control" id="name" placeholder="Enter your name">
     </div>
@@ -36,123 +36,86 @@
        <br><input type="number" class="form-control" id="age" placeholder="Age" min="7" max="99">
     </div>  
 
-    <div class="form-group">
-      <label for="exampleFormControlSelect1">Which option best describes your current role?</label>
-      <select class="form-control" id="exampleFormControlSelect1" placeholder="Select current job role">
-        <option>Select current job role</option>
-        <option>Student</option>
-        <option>Full Time Job</option>
-        <option>Full Time Learner</option>
-        <option>Prefer not to say</option>
-        <option>Other</option>
-      </select>
-    </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Which option best describes your current role?</label>
+        <select class="form-control" id="exampleFormControlSelect1" placeholder="Select current job role">
+          <option>Select current job role</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </div>
 
-    <div>
-      <p>Would you recommend freeCodeCamp to a friend?</p>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="definitely" id="definitely" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
-          Definitely</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="maybe" id="maybe" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
-          Maybe
-        </label>
-      </div>
-        <div class="form-check">
-        <input class="form-check-input" type="radio" name="notsure" id="notsure" value="option1" checked>
-        <label class="form-check-label" for="exampleRadios1">
-          Not sure
-        </label>
-      </div>
-    </div>
-    <div>
-     <div>
-      <p>What would you like to see improved? (Check all that apply)</p> 
-     </div>  
-      <!-- <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-      <label class="form-check-label" for="defaultCheck1">
-         Front-end Projects
-      </label>
-    </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Back-end Projects 
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Data Visualization
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Challenges
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Open Source Community
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Gitter help rooms
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Videos
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           City Meetups
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Wiki
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-          Forum
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-        <label class="form-check-label" for="defaultCheck1">
-           Additional Courses
-        </label>
-      </div> -->
-    </div>  
+      <hr>
+
+      <form>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+          <input type="radio" name="choice" id="definitely" value="option1">
+          <label for="definitely">Definitely</label><br>
+          <input type="radio" name="choice" id="maybe" value="option1">
+          <label for="maybe">Maybe</label><br>
+          <input type="radio" name="choice" id="notsure" value="option1">
+          <label for="notsure">Not sure</label><br>
+
+        <hr>
+
+        <p>What would you like to see improved? (Check all that apply)</p> 
+          
+        
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Front-end Projects</label><br>
+      
+       
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Back-end Projects</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Data Visualization</label><br>
+        
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Challenges</label><br>
+      
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Open Source Community</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Gitter help rooms</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Videos</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">City Meetups</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Wiki</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Forum</label><br>
+      
+        <input type="checkbox" value="" id="defaultCheck1">
+        <label for="defaultCheck1">Additional Courses</label><br>
+      </form>
+     
+      <hr>
+      
     <div class="form-group">
       <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
       <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Enter your comment here..."></textarea>
     </div>
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" id="last">Submit</button>
   </form>
   </div>
   <div class="rituals">
    <div>
-    <span>Designed by Daniels Ilori. <i class="far fa-copyright"></i> 2020</span>
+    <span id="propertyOf">Designed by Daniels Ilori. <i class="far fa-copyright"></i> 2020</span>
    </div> 
    <div>
-    <span>Follow me on my social media channels: </span>
+    <span id="media">Follow me on my social media channels: </span>
     <i class="fab fa-twitter" href="https://twitter.com/explore"></i>
     <i class="fab fa-instagram"></i>
     <i class="fab fa-facebook-square"></i>

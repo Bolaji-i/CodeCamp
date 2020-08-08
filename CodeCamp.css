@@ -28,21 +28,30 @@ body {
 	max-width: 500px;
 	width: 50%;*/
 }
-#survey-form { 
-    /*height: 300px;
-  	width: 70%;*/
+.name{
+	padding-top: 30px;
+}
+#last { 
+    margin-bottom: 50px;
  }
 
 .form-check-label {
 	margin-left: 5px;
-	padding-bottom: -500px;
+	margin-bottom: 50px;
 }
 
 .rituals { 
-background-color: #e8e8e8;
+background-color: gray;
 height: 100px; 
 width: 100%; 
 position: relative;
 right: 0; 
 bottom: 0;
+}
+#propertyOf {
+	margin-left: 150pt;
+	padding-top: 30px;
+}
+#media {
+	margin-left: 150pt;
 }
